@@ -1,6 +1,6 @@
 <?php
-$consumerkey ="7GAMt7qdJfqxtFAtDLsAuT6DfyhIjjpkdClhFte6tGdJcDbb";
-$consumersecrect="NNGDKnzsd4ffACf4dQe3tmOEEgAfgRl9GNV0KALC9jN9hj2UfWvJk73mIG8HUBEs";
+$consumerkey =""; // consumer key
+$consumersecrect=""; // consumersecret
 
 $access_Token_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials';
 $headers =['Content-Type:application/json; charset=utf8'];
@@ -18,5 +18,6 @@ $result = json_decode($result);
 
 echo $acccess_token = $result->access_token;
 curl_close($curl);
+
 
 ?>
